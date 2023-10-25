@@ -1,12 +1,12 @@
 import React from "react";
+import logo from "../images/logo.svg";
 
 export const Header = () => {
   return (
     <header className="header">
       <div className="heading">
         <h1 className="header-logo">
-          <div>家</div>
-          <div>ホームケアナビ</div>
+          <img src={logo} />
         </h1>
       </div>
       <div className="header-navbar">

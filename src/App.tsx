@@ -1,7 +1,7 @@
 import "./App.css";
 import { Content } from "./components/Content";
 import { ContactCompleted } from "./components/ContactCompleted";
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
