@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+/* ヘッダー */
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: green;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header a {
+  text-decoration: none;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-logo {
+  display: flex;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+.header-nav-lists {
+  display: flex;
+}
+
+.header-nav-lists__list {
+  margin-left: 70px;
+  font-size: 15px;
+  line-height: 100px;
+}
+/* ヘッダー ここまで*/
+
+/* フッター */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: green;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-logo {
+  display: flex;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 100px;
+}
+
+.footer-nav-lists {
+  display: flex;
+}
+
+.footer-nav-lists__list {
+  margin-left: 70px;
+  font-size: 15px;
+  line-height: 100px;
+}
+/* フッター ここまで*/
+/* コンテンツ */
+.content {
+  padding: 40px;
+  background-color: red;
+}
+
+.contact-form {
+  background-color: blue;
+  height: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+dl {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  height: 50px;
+  width: 80%;
 }
+
+textarea {
+  width: 80%;
+}
+
+button {
+  width: 80%;
+}
+/* コンテンツ ここまで */
