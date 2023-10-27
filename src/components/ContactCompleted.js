@@ -6,9 +6,9 @@ import { Box, Flex, Link as ChakraLink, Heading, Text } from "@chakra-ui/react";
 
 export const ContactCompleted = () => {
   return (
-    <>
+    <Box h={"100%"}>
       <Header />
-      <Box px={"265px"} position={"relative"} zIndex={0}>
+      <Box px={"auto"} position={"relative"} zIndex={0} w={"100vw"}>
         <Flex
           h="251px"
           w="690px"
@@ -18,9 +18,11 @@ export const ContactCompleted = () => {
           flexDirection={"column"}
           top={"60px"}
           mt={"100px"}
-          mb={"399px"}
+          mx={"auto"}
+          pb={"32px"}
+          // mb={"399px"}
         >
-          <Heading as="h2" fontSize={"20px"} mt={"32px"} mb={"48px"}>
+          <Heading as="h2" fontSize={"20px"} mb={"48px"}>
             問い合わせ完了
           </Heading>
           <Box w="343px" h="42px" mb={"16px"}>
@@ -36,6 +38,6 @@ export const ContactCompleted = () => {
         </Flex>
       </Box>
       <Footer />
-    </>
+    </Box>
   );
 };

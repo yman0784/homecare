@@ -6,10 +6,12 @@ export const Footer = () => {
     <Flex
       as="nav"
       h="50px"
-      w="1280px"
+      w="100vw"
       bg="#ffffff"
       align="center"
       justify="space-between"
+      position={"fixed"}
+      bottom={0}
     >
       <Flex pl={"145px"}>
         <Box color="#2E3331" fontSize={"14px"} fontWeight="bold" mr={"24px"}>

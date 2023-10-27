@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Content />}></Route>
-          <Route path="complete" element={<ContactCompleted />}></Route>
+          <Route path="/complete" element={<ContactCompleted />}></Route>
         </Routes>
       </BrowserRouter>
     </ChakraProvider>

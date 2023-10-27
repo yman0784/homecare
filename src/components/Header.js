@@ -7,7 +7,7 @@ export const Header = () => {
     <Flex
       as="nav"
       h="60px"
-      w="1280px"
+      w="100vw"
       bg="#ffffff"
       boxShadow=""
       borderTop="2px"

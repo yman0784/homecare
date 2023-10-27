@@ -1,13 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as ReactRouterLink } from "react-router-dom";
+import { Button, Link as ChakraLink } from "@chakra-ui/react";
 
 export const ContactButton = (props) => {
-  const { onClick } = props;
+  const { children, onClick, bg, color, fontSize, width, height } = props;
   return (
-    <>
-      <button onClick={onClick}>
-        <Link to="complete">この内容で問い合わせる</Link>
-      </button>
-    </>
+    <Button
+      onClick={onClick}
+      bg={bg}
+      color={color}
+      fontSize={fontSize}
+      w={width}
+      h={height}
+    >
+      {children}
+    </Button>
   );
 };
