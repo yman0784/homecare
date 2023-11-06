@@ -1,28 +1,32 @@
 import React from "react";
-import { Header } from "./Header";
-import { Footer } from "./Footer";
-import { Link as ReactRouterLink } from "react-router-dom";
+import { Header } from "../atoms/layout/Header";
+import { Footer } from "../atoms/layout/Footer";
+import { Link as ReactRouterLink, useNavigate } from "react-router-dom";
 import { Box, Flex, Link as ChakraLink, Heading, Text } from "@chakra-ui/react";
 
 export const ContactCompleted = () => {
+  const navigate = useNavigate();
+
+  const onClickBackContent = () => {
+    navigate("/");
+  };
+
   return (
     <Box h={"100%"}>
       <Header />
-      <Box px={"auto"} position={"relative"} zIndex={0} w={"100vw"}>
+      <Box px={"auto"} w={"100vw"} h={"82vh"}>
         <Flex
-          h="251px"
-          w="690px"
+          h="25vh"
+          w="69vw"
           bg={"#ffffff"}
           justifyContent={"center"}
           alignItems={"center"}
           flexDirection={"column"}
-          top={"60px"}
-          mt={"100px"}
+          mt={"12vh"}
           mx={"auto"}
-          pb={"32px"}
-          // mb={"399px"}
+          pb={"3vh"}
         >
-          <Heading as="h2" fontSize={"20px"} mb={"48px"}>
+          <Heading as="h2" fontSize={"20px"} mb={"4vh"}>
             問い合わせ完了
           </Heading>
           <Box w="343px" h="42px" mb={"16px"}>
@@ -32,8 +36,13 @@ export const ContactCompleted = () => {
               事業所からの連絡をお待ち下さい。
             </Text>
           </Box>
-          <ChakraLink color="#F06364" fontSize={"14px"}>
-            <ReactRouterLink to="/">事業所のページに戻る</ReactRouterLink>
+          <ChakraLink
+            as="a"
+            color="#F06364"
+            fontSize={"14px"}
+            onClick={onClickBackContent}
+          >
+            事業所のページに戻る
           </ChakraLink>
         </Flex>
       </Box>

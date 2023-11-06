@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import { Textarea } from "@chakra-ui/react";
 
 export const TextArea = (props) => {
-  const { placeholder, height } = props;
-  const [inputText, setInputText] = useState("");
-  const onChangeText = (event) => setInputText(event.target.value);
+  const { placeholder, height, onChange } = props;
 
   return (
     <div>
       <Textarea
         placeholder={placeholder}
-        value={inputText}
-        onChange={onChangeText}
+        onChange={onChange}
         resize={"none"}
         h={height}
       />

@@ -5,15 +5,13 @@ export const Footer = () => {
   return (
     <Flex
       as="nav"
-      h="50px"
+      h="6vh"
       w="100vw"
       bg="#ffffff"
       align="center"
       justify="space-between"
-      position={"fixed"}
-      bottom={0}
     >
-      <Flex pl={"145px"}>
+      <Flex pl={"14vw"}>
         <Box color="#2E3331" fontSize={"14px"} fontWeight="bold" mr={"24px"}>
           ホームケアナビ
         </Box>
@@ -21,7 +19,12 @@ export const Footer = () => {
           ©hogehoge
         </Box>
       </Flex>
-      <Flex pt={"16px"} pr={"145px"} pb={"18px"}>
+      <Flex
+        pt={"16px"}
+        pr={"145px"}
+        pb={"18px"}
+        display={{ base: "none", md: "flex" }}
+      >
         <Box h={"16px"}>
           <Link mr={"20px"} color="#F06364">
             プライバシーポリシー
