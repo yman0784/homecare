@@ -1,9 +1,10 @@
 import theme from "./theme/theme";
-import { Content } from "./components/pages/Content";
+import { Contact } from "./components/pages/Contact";
 import { ContactCompleted } from "./components/pages/ContactCompleted";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
-import { ContactConfirm } from "./components/pages/ContactConfirm";
+import { Reserve } from "./components/pages/Reserve";
+import { ContactForm } from "./components/pages/ContactForm";
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/complete" element={<ContactCompleted />}></Route>
-          <Route path="/" element={<Content />}></Route>
-          <Route path="/confirm" element={<ContactConfirm />}></Route>
+          {/* <Route path="/" element={<Contact />}></Route> */}
+          <Route path="/" element={<ContactForm />}></Route>
+          <Route path="/reserve" element={<Reserve />}></Route>
         </Routes>
       </BrowserRouter>
     </ChakraProvider>

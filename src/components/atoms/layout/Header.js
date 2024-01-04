@@ -33,7 +33,7 @@ export const Header = () => {
         shadow={"xs"}
         position={"fixed"}
         top={0}
-        zIndex={1}
+        // zIndex={1}
       >
         <Box>
           <Image src={logo} h="3vh" w="15vw" ml={"2vh"}></Image>

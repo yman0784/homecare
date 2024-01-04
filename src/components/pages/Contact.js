@@ -34,8 +34,6 @@ export const Contact = () => {
     setDetails(event.target.value);
   };
 
-  const inquiry = {};
-
   const CreateInquiry = () => {
     axios
       .post("http://localhost:3000/api/inquiries", {
