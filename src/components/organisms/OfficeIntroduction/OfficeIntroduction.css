@@ -1,0 +1,20 @@
+.introduction-container {
+  background-color: white;
+  margin-top: 24px;
+  width: 520px;
+}
+
+.introduction-card {
+  display: flex;
+  justify-content: center;
+}
+
+.introduction-card img {
+  width: 240px; /* イメージを親要素に合わせて表示 */
+  height: 180px; /* アスペクト比を維持したままリサイズ */
+  margin-right: 8px;
+}
+
+.introduction-card p {
+  width: 240px; /* イメージを親要素に合わせて表示 */
+}
