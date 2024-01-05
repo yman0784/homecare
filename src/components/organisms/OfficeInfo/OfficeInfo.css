@@ -1,0 +1,14 @@
+.info-container {
+  border-radius: 5px; /* 任意の角丸のサイズを指定 */
+  background-color: white;
+  width: 438px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+}

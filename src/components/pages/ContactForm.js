@@ -16,6 +16,8 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { Header } from "../atoms/layout/Header";
+import { Footer } from "../atoms/layout/Footer";
 
 // CORS対応のための設定
 axios.defaults.baseURL = "http://localhost:3000"; // サーバーのベースURLに設定
@@ -37,7 +39,7 @@ export const ContactForm = () => {
 
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Flex justify="center" bg="#F5F7F7" overflow="auto" height="100vh">
         <Box
           w={{ base: "80%", md: "750px" }}
@@ -147,7 +149,7 @@ export const ContactForm = () => {
           </Stack>
         </Box>
       </Flex>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

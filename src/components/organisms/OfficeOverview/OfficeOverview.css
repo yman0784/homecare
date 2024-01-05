@@ -1,0 +1,16 @@
+.overview-container {
+  background-color: white;
+  margin: 24px 0 80px;
+  width: 520px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px #cdd6dd;
+}
+
+.content-right {
+  width: 384px;
+  margin-left: 16px;
+}
