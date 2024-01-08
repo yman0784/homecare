@@ -1,5 +1,20 @@
-.introduction-container {
+.staff-introduction-container {
   background-color: white;
   margin-top: 24px;
   width: 520px;
+  padding-top: 16px;
+}
+
+.staff-introduction-container.small-container {
+  width: 520px;
+  height: 98vh;
+  margin-top: 24px;
+  padding-top: 16px;
+  background-color: white;
+}
+
+.staff-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px 0 16px;
 }
