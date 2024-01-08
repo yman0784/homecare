@@ -1,16 +1,37 @@
 .overview-container {
   background-color: white;
-  margin: 24px 0 80px;
+  margin: 24px 0 0 0;
   width: 520px;
+  padding: 16px;
+  z-index: 2;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
   border-top: solid 1px #cdd6dd;
+  padding: 12px 0;
+}
+
+.content-left {
+  color: #707f89;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 12.5px 0 0 8px;
 }
 
 .content-right {
   width: 384px;
-  margin-left: 16px;
+  margin: 12.5px 0 12.5px 16px;
+  color: #3b4043;
+  font-size: 14px;
+}
+
+.content-right-url {
+  width: 384px;
+  font-size: 14px;
+  margin: 12.5px 8px 12.5px 16px;
+  color: #f06364;
+  /* word-break: break-word; */
+  word-break: break-all;
 }

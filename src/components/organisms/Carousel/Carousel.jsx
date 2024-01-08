@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./Carousel.css";
 
 const Carousel = ({ images, thumbnails }) => {
+  const nextIcon = "/グループ 1533.png";
+  const prevIcon = "/グループ 1512.png";
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevSlide = () => {
@@ -27,13 +30,27 @@ const Carousel = ({ images, thumbnails }) => {
     <div className="carousel">
       <div className="carousel-container">
         <button onClick={goToPrevSlide} className="carousel-button prev">
-          &lt;
+          <img
+            src={prevIcon}
+            alt="前へ"
+            style={{
+              width: "40px",
+              height: "40px",
+            }}
+          />
         </button>
         <div className="carousel-slide">
           <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
         </div>
         <button onClick={goToNextSlide} className="carousel-button next">
-          &gt;
+          <img
+            src={nextIcon}
+            alt="次へ"
+            style={{
+              width: "40px",
+              height: "40px",
+            }}
+          />
         </button>
         <div className="carousel-number">
           {currentIndex + 1}/{images.length}

@@ -2,11 +2,13 @@
   background-color: white;
   margin-top: 24px;
   width: 520px;
+  padding: 16px 16px 15px 16px;
 }
 
 .introduction-card {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .introduction-card img {

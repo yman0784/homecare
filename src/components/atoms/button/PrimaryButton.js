@@ -9,8 +9,8 @@ export const PrimaryButton = (props) => {
       bg={bg}
       color={color}
       fontSize={fontSize}
-      w={width}
-      h={height}
+      width={width}
+      height={height}
       mt={mt}
     >
       {children}
